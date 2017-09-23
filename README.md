@@ -187,12 +187,14 @@ delimiter ;
 
 ---
 
+@sessionVar << sessions variables
 
-@xxx << sessions variables
+set @sessionVar = 'xx';
+select id into @sessionVar from xxx;
+select @sessionVar;
 
-select id into @var_1 from xxx;
-select @var_1;
-
+Local Variable
+DECARE localVar = "xx";
 ----
 
 
