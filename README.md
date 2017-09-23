@@ -203,10 +203,11 @@ select id into localVar from xxx;
 Function
 
 delimite //
-create function xx(in1 type, in2 type)
+create [DEFINER=`root`@`localhost`] function xx(in1 type, in2 type)
 return [return type]
 begin
 
 	..;
 	..;
 end//
+
